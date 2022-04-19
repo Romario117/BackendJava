@@ -1,4 +1,4 @@
-package practicaMona;
+package practicaMona.modelos;
 
 public class MonaChef extends MonaCatModelo{
 
