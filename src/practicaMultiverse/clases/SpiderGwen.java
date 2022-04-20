@@ -16,46 +16,50 @@ public class SpiderGwen extends SpidermanModelo implements  habilidadesSpiderman
     //cambiar return fuerza por dañoOponente
     @Override
     public int golpeDebil(int fuerza, int resistencia) {
-        if ((fuerza>1 && fuerza< 4) && (resistencia>10)){
-            setFuerza(10);
+        if ((fuerza>=10 && fuerza<= 40) && (resistencia>=100)){
+            setDañoOponente(10);
             setResistencia(getResistencia()-5);
-            return getFuerza();
-        }else if ((fuerza>5 && fuerza< 10) && (resistencia>10)){
-            setFuerza(15);
+            return getDañoOponente();
+        }else if ((fuerza>=50 && fuerza<= 100) && (resistencia>=100)){
+            setDañoOponente(15);
             setResistencia(getResistencia()-10);
-            return getFuerza();
-        }else if ((fuerza>1 && fuerza< 4) && (resistencia<10)){
-            setFuerza(7);
+            return getDañoOponente();
+        }else if ((fuerza>=10 && fuerza<= 40) && (resistencia<=100)){
+            setDañoOponente(7);
             setResistencia(getResistencia()-7);
-            return getFuerza();
-        }else if ((fuerza>5 && fuerza< 10) && (resistencia<10)){
-            setFuerza(8);
+            return getDañoOponente();
+        }else if ((fuerza >=50 && fuerza <= 100) && (resistencia<=100)){
+            setDañoOponente(8);
             setResistencia(getResistencia()-15);
-            return getFuerza();
+            return getDañoOponente();
         }else{
-            setFuerza(0);
+            setDañoOponente(0);
         }
-        return getFuerza();
+        return getDañoOponente();
     }
 
     @Override
     public int golpeFuerte(int fuerza, int resistencia) {
-        if ((fuerza>6 && fuerza< 15) && (resistencia>20)){
-            setFuerza(10);
-            return getFuerza();
-        }else if ((fuerza>5 && fuerza< 10) && (resistencia>10)){
-            setFuerza(15);
-            return getFuerza();
-        }else if ((fuerza>1 && fuerza< 4) && (resistencia<10)){
-            setFuerza(7);
-            return getFuerza();
-        }else if ((fuerza>5 && fuerza< 10) && (resistencia<10)){
-            setFuerza(8);
-            return getFuerza();
+        if ((fuerza>=10 && fuerza<= 40) && (resistencia>=100)){
+            setDañoOponente(15);
+            setResistencia(getResistencia()-10);
+            return getDañoOponente();
+        }else if ((fuerza>=50 && fuerza<= 100) && (resistencia>=100)){
+            setDañoOponente(20);
+            setResistencia(getResistencia()-15);
+            return getDañoOponente();
+        }else if ((fuerza>=10 && fuerza<= 40) && (resistencia<=100)){
+            setDañoOponente(16);
+            setResistencia(getResistencia()-14);
+            return getDañoOponente();
+        }else if ((fuerza>=50 && fuerza<= 100) && (resistencia<=100)){
+            setDañoOponente(16);
+            setResistencia(getResistencia()-15);
+            return getDañoOponente();
         }else{
-            setFuerza(0);
+            setDañoOponente(0);
         }
-        return getFuerza();
+        return getDañoOponente();
     }
 
     @Override

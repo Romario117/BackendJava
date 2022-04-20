@@ -9,10 +9,11 @@ public class SpidermanModelo {
     private int resistencia;
     private int experiencia;
     private int sensibilidad;
+    private int dañoOponente;
 
     public SpidermanModelo() {}
 
-    public SpidermanModelo(String nombre, String universo, String colorTraje, int edad, int fuerza, int resistencia, int experiencia, int sensibilidad) {
+    public SpidermanModelo(String nombre, String universo, String colorTraje, int edad, int fuerza, int resistencia, int experiencia, int sensibilidad, int dañoOponente) {
         this.nombre = nombre;
         this.universo = universo;
         this.colorTraje = colorTraje;
@@ -21,6 +22,7 @@ public class SpidermanModelo {
         this.resistencia = resistencia;
         this.experiencia = experiencia;
         this.sensibilidad = sensibilidad;
+        this.dañoOponente = dañoOponente;
 
     }
 
@@ -32,6 +34,7 @@ public class SpidermanModelo {
     public void setResistencia(int resistencia){this.resistencia = resistencia; }
     public void setExperiencia(int experiencia){ this.experiencia = experiencia; }
     public void setSensibilidad(int sensibilidad){ this.sensibilidad = sensibilidad; }
+    public void setDañoOponente(int dañoOponente) {  this.dañoOponente = dañoOponente;  }
 
     public String getNombre(){ return nombre;}
     public String getUniverso() { return universo;}
@@ -41,6 +44,7 @@ public class SpidermanModelo {
     public int getResistencia(){ return  resistencia; }
     public int getExperiencia(){ return experiencia; }
     public int getSensibilidad(){ return  sensibilidad; }
+    public int getDañoOponente() {  return dañoOponente;  }
 
     @Override
     public String toString() {
